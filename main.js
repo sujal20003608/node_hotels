@@ -18,9 +18,9 @@
 //console.log(typeof(objecttojsoc'express'
 const express=require('express');
 const app = express();
-
+require('dotenv').config();
 const db=require('./db');
-
+const port=process.env.port || 3000;
 
 const bodyparser=require('body-parser');
 
